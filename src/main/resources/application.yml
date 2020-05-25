@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url:    jdbc:postgresql://10.10.16.109:5432/railways
+    url:    jdbc:postgresql://localhost:5432/railways
     username: railways
     password: r@ilw@ys
   jpa:
@@ -9,15 +9,6 @@ logging:
   level:
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
-server:
-  port: 8080
-
----
-
-spring:
-  profiles: dev
-  datasource:
-    url:    jdbc:postgresql://localhost:5432/railways
 server:
   port: 8080
 
